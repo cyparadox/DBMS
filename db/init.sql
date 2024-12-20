@@ -1,8 +1,8 @@
 
-CREATE DATABASE IF NOT EXISTS HealthManagementSystem;
-
+CREATE DATABASE HealthManagementSystem;
 
 USE HealthManagementSystem;
+
 
 CREATE TABLE patients (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -17,6 +17,7 @@ CREATE TABLE doctors (
     name VARCHAR(255) NOT NULL,
     specialization VARCHAR(255) NOT NULL
 );
+
 
 INSERT INTO doctors (name, specialization) VALUES
     ('Dr. Alice Smith', 'Pediatrics'),
